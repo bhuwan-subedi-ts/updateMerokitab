@@ -1,0 +1,17 @@
+{% for p in prod %}
+<form action="/your-name/" method="post">
+    <label for="your_name">Book Name: </label>
+    <input id="your_name" type="text" name="your_name" value="">
+    <label for="your_name">Price: </label>
+    <input id="your_name" type="text" name="your_name" value="">
+    <label for="your_name">Details: </label>
+    <input id="your_name" type="text" name="your_name" value="">
+    <label for="your_name">Posted By: </label>
+    <input id="your_name" type="text" name="your_name" value="{{ p.username }}">
+    <label for="your_name">Published Date: </label>
+    <input id="your_name" type="text" name="your_name" value="{{ current_name }}">
+    <label for="your_name">Current Address: </label>
+    <input id="your_name" type="text" name="your_name" value="">
+    <input type="submit" value="OK">
+</form>
+{% endfor %}
